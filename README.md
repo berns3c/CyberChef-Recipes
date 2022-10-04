@@ -8,7 +8,7 @@ OSINT IOC Enrichment is often a built-in tool for Commercial Security Devices, s
 
 ## DNS Resolution (by Jon Glass but modified)
 
-Utilizes DNS over HTTP capability of CyberChef to query A record of any domain. I have adjusted this since Regex is not working on Jon's presentation.
+Utilizes DNS over HTTP capability of CyberChef to query A record of any domain. I have adjusted this since Regex of Google DNS result is outdated.
 https://www.youtube.com/watch?v=sPIyrOPLHlY
 https://www.osdfcon.org/presentations/2019/Jonathan-Glass_Cybersecurity-Zero-to-Hero-With-CyberChef.pdf
 
