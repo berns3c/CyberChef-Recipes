@@ -33,7 +33,9 @@ Parses IPs from raw/SIEM/alert logs then creates HTTP request string going to OS
 
 ### Recipe Details
 
-```[{"op":"Regular expression","args":["IPv4 address","(?:(?:\\d|[01]?\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d|\\d)(?:\\/\\d{1,2})?",true,true,false,false,false,false,"List matches"]},{"op":"Unique","args":["Line feed",false]},{"op":"Fork","args":["\\n","\\n\\n",false]},{"op":"Register","args":["([\\s\\S]*)",true,false,false]},{"op":"Find / Replace","args":[{"option":"Regex","string":""},"",true,false,true,false]}]```
+```[{"op":"Regular expression","args":["IPv4 address","(?:(?:\\d|[01]?\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d|\\d)(?:\\/\\d{1,2})?",true,true,false,false,false,false,"List matches"]},{"op":"Unique","args":["Line feed",false]},{"op":"Fork","args":["\\n","\\n\\n",false]},{"op":"Register","args":["([\\s\\S]*)",true,false,false]},{"op":"Find / Replace","args":[{"option":"Regex","string":"$R0"},"https://www.ipqualityscore.com/ip-reputation-check/lookup/$R0\\nhttps://www.abuseipdb.com/check/$R0\\nhttps://virustotal.com/gui/ip-address/$R0",true,false,true,false]}]```
+
+![Recipe_3](screenshot/recipe_3.jpg)
 
 ## SHA256 OSINT
 
