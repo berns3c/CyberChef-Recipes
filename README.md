@@ -15,6 +15,8 @@ https://www.youtube.com/watch?v=sPIyrOPLHlY
 
 ```[{"op":"Fork","args":["\\n","\\n\\n",false]},{"op":"DNS over HTTPS","args":["https://dns.google.com/resolve","A",false,false]},{"op":"JPath expression","args":["Answer[0]","\\n"]},{"op":"Regular expression","args":["User defined","\\{\\\"name\\\"\\:\\\"(.*)\\.\",.*data\\\"\\:\\\"(.*)\"\\}",true,true,false,false,false,false,"List capture groups"]}]```
 
+![Recipe_1](screenshots/screenshot1.jpg)
+
 ## URL OSINT
 
 Parses URLs from raw/SIEM/alert logs then creates HTTP request string going to OSINT for those URLs ready to be open in new tab.
