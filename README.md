@@ -6,9 +6,10 @@ Here are the list of Recipes I have created in the past.
 
 OSINT IOC Enrichment is often a built-in tool for Commercial Security Devices, sometimes free or a paid add-on. Recipes below aim to reduce manual task of copy and pasting IOC to OSINT websites. If you have a commercial/internal tool that accepts GET request as an input for IOC, you can modify Find/Replace Operation below to your internal tool to perform the request.
 
-## DNS Resolution (by Jon Glass/https://www.youtube.com/watch?v=sPIyrOPLHlY)
+## DNS Resolution (by Jon Glass but modified/)
 
 Utilizes DNS over HTTP capability of CyberChef to query A record of any domain. I have adjusted this since Regex is not working on Jon's presentation.
+https://www.youtube.com/watch?v=sPIyrOPLHlY
 
 ### Recipe Details
 
