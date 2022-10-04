@@ -44,3 +44,5 @@ Parses SHA256 hashes from raw/SIEM/alert logs then creates HTTP request string g
 ### Recipe Details
 
 ```[{"op":"Regular expression","args":["User defined","[A-Fa-f0-9]{64}",true,true,false,false,false,false,"List matches"]},{"op":"Register","args":["([\\s\\S]*)",true,true,false]},{"op":"Find / Replace","args":[{"option":"Regex","string":"$R0"},"https://www.virustotal.com/gui/file/$R0\\nhttps://www.talosintelligence.com/talos_file_reputation?s=$R0\\nhttps://www.hybrid-analysis.com/search?query=$R0",true,false,true,false]}]```
+
+![Recipe_4](screenshot/recipe_4.jpg)
