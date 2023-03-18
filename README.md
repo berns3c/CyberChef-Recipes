@@ -47,3 +47,29 @@ Parses SHA256 hashes from raw/SIEM/alert logs then creates HTTP request string g
 ```[{"op":"Regular expression","args":["User defined","[A-Fa-f0-9]{64}",true,true,false,false,false,false,"List matches"]},{"op":"Register","args":["([\\s\\S]*)",true,true,false]},{"op":"Find / Replace","args":[{"option":"Regex","string":"$R0"},"https://www.virustotal.com/gui/file/$R0\\nhttps://www.talosintelligence.com/talos_file_reputation?s=$R0\\nhttps://www.hybrid-analysis.com/search?query=$R0",true,false,true,false]}]```
 
 ![Recipe_4](screenshot/recipe_4.jpg)
+
+## Grab All
+
+Grab all characters inside quotes ("):
+
+### Recipe Details
+
+```[{"op":"Regular expression","args":["User defined","\"([^\"]+)\"",true,true,false,false,false,false,"List capture groups"]}]```
+
+![Recipe_5](screenshot/recipe_5.jpg)
+
+Grab all characters before colon (:):
+
+### Recipe Details
+
+```[{"op":"Regular expression","args":["User defined","^([^:]+)",true,true,false,false,false,false,"List matches"]}]```
+
+![Recipe_6](screenshot/recipe_6.jpg)
+
+Grab all characters after colon (:):
+
+### Recipe Details
+
+```[{"op":"Regular expression","args":["User defined","([^: ]+)$",true,true,false,false,false,false,"List matches"]}]```
+
+![Recipe_7](screenshot/recipe_7.jpg)
